@@ -1,16 +1,14 @@
 version: 2
 
-# Build documentation in the docs/ directory with MkDocs
+# Set the version of Python and other tools you might need
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.12"
+
 mkdocs:
   configuration: mkdocs.yml
 
-# Optionally set the version of Python and other tools you are using
 python:
-  version: 3.8
   install:
     - requirements: requirements.txt
-
-build:
-  os: ubuntu-20.04
-  tools:
-    python: "3.8"
